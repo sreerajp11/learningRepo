@@ -1,4 +1,4 @@
-package com.aliens.demoApp;
+package com.aliens.demoapp;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

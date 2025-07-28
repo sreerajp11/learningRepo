@@ -1,4 +1,4 @@
-package com.aliens.demoApp;
+package com.aliens.demoapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
