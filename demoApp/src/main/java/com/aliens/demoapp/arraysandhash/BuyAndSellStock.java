@@ -26,6 +26,22 @@ public class BuyAndSellStock {
         return profit;
     }
 
+    /**
+     * Max profit by using sliding window approach
+     *
+     * @param prices array of prices
+     * @return maximum profit
+     */
+    private static int maximumProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int profit = 0;
+        for (int price : prices) {
+            minPrice = Math.min(minPrice, price);
+            profit = Math.max(profit, price - minPrice);
+        }
+        return profit;
+    }
+
 
     public static void main(String[] args) {
         BuyAndSellStock.maxProfit(new int[]{7, 1, 5, 3, 6, 4});
